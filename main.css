@@ -1,0 +1,225 @@
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+/*start style input field*/
+.input{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+#inputSearch{
+    width: 500px;
+    border-radius: 5px;
+    border-radius: 1px solid gray;
+    margin-right: 10px;
+}
+#inputSearch:focus{
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed; 
+}
+#btnSearch{
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+#btnSearch:hover{
+    background-color: rgb(8, 92, 8);
+}
+/*end style input field*/
+/*start style movie list*/
+.movieList{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 15px;
+}
+.movie{
+    width: 300px;
+    height: 650px;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.poster{
+    width: 300px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 0 5px gray;
+}
+.movie:hover{
+    background-image: url('./images/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: 50% 30%;
+}
+.title{
+    width: 300px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.description, .year{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#btnDetails{
+    width: 300px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+#btnDetails:hover{
+    background-color: rgb(8, 92, 8);
+}
+/*end style movie list*/
+/*start style movie detail modal box*/
+.movieDetail{
+    width: 1200px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 30px;
+    background-color: bisque;
+    box-shadow: 0 0 30px black;
+}
+.moviePoster{
+    height: 540px;
+    width: 400px;
+    padding: 30px;
+}
+.movieDescripton{
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+}
+.movieTitle{
+    margin-left: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.movieYearAndType, .about{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: gray;
+}
+.about{
+    color: black;
+}
+.titelsAbout{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.values{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.rateSource{
+    display: flex;
+    flex-direction: column;
+}
+.rateValue{
+    display: flex;
+    flex-direction: column;
+}
+.online{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#watch{
+    color: white;
+    font-size: 20px; 
+    text-align: center;
+    line-height: 50px;
+}
+.online:hover{
+    background-color: rgb(117, 25, 25);
+    box-shadow: 0 0 10px rgb(117, 25, 25);
+}
+.play{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    background-image: url('./images/play.png');
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+    align-items: end;
+    font-size: 22px;
+    cursor: pointer;
+}
+.close:hover, .closeWatchMovie:hover{
+    color: brown;
+}
+.hide{
+    display: none;
+}
+/*end style movie detail modal box*/
+/*start style release modal box*/
+.watchMovie{
+    width: 350px;
+    height: 100px;
+    background-color: indianred;
+    box-shadow: 0 0 20px rgb(117, 25, 25);
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+    font-size:20px;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+.closeWatchMovie{
+    position: absolute;
+    top: -35px;
+    right: 15px;
+    cursor: pointer;
+}
+/*end style release modal box*/
+

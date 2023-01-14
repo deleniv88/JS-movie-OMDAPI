@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--input field-->
+        <div class="input">
+            <input type="text" name="search" id="inputSearch">
+            <button onclick="loadMovies()" id="btnSearch">Search</button>
+        </div>
+        <!--for movie list-->
+        <div class="movieList"></div>
+        <!--for movie detail-->
+        <div class="movieDetail hide"></div>
+        <!--for release movie box-->
+        <div class="watchMovie hide">
+            <span class="closeWatchMovie">x</span>
+            Sorry, but this movie isn't release yet</div>
+    </div>
+    <!--javascript-->
+    <script src="main.js"></script>
+</body>
+
+</html>
